@@ -4,6 +4,6 @@ An example Java (Intellij) project that uses Processing library but will work ou
 
 Note that the project has multiple branches, with differing levels of complexity.
 
-### installation
+### Installation
 
-This project will require you to have Processing installed locally in ~/Apps/ (you can adjust the paths to the processing jars as necessary in module settings).
+This project bundles all the required Processing libraries.  This isn't a best-practice, but keeps things very simple.
