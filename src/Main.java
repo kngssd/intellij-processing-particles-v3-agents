@@ -1,7 +1,7 @@
 import processing.core.PApplet;
 
 public class Main extends PApplet {
-    Spark[] sparks;
+    Agent[] agents;
     public static void main(String[] args) {
         PApplet.main(new String[]{"Main"});
     }
@@ -12,19 +12,19 @@ public class Main extends PApplet {
 
     @Override
     public void setup() {
-        sparks = Spark.createSparks(this, 100);
+        agents = createAgents(this, 100);
     }
 
 
     @Override
     public void draw() {
     background(100);
-        for (Spark s : sparks){
-            s.display();
+        for (Agent a : agents){
+            a.display();
         }
 
-        for (Spark s : sparks){
-            s.update();
+        for (Agent a : agents){
+            a.update();
         }
     }
 }
