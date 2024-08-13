@@ -43,17 +43,17 @@ public class Main extends PApplet {
     }
 
     private Agent createFastAgent(PApplet p5) {
-        float x = random(width);
-        float y = random(height);
-        float size = 20;
+        float x = random(0f, 800f);
+        float y = random(0f, 600f);
+        float size = 30;
 
         return new FastAgent(p5, x, y, size);
     }
 
     private Agent createSlowAgent(PApplet p5) {
-        float x = random(width);
-        float y = random(height);
-        float size = 50;
+        float x = random(0f, 800f);
+        float y = random(0f, 600f);
+        float size = 60;
 
         return new SlowAgent(p5, x, y, size);
     }
