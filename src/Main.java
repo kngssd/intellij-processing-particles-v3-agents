@@ -1,6 +1,5 @@
 import processing.core.PApplet;
 
-
 public class Main extends PApplet {
     Spark[] sparks;
     public static void main(String[] args) {
